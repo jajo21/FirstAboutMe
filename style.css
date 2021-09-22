@@ -2,6 +2,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html, body {
+  max-width: 1000px;
+  max-height: 700px;
+  margin: 0 auto;
+}
+body {
+  background-color: rgb(247, 252, 255);
+}
 /* MAIN HEADER*/
 .mainHeader {
     background-color: white;
@@ -23,10 +31,10 @@ nav>ul>li:nth-child(1) {
 }
 nav > ul > li > a {
     color: black;
-    width: 50px;
 }
 nav > ul > li > a:hover {
     background-color: rgb(221, 221, 221);
+    border-radius: 5px;
 }
 
 /*DROPDOWN BUTTON*/
@@ -59,7 +67,9 @@ nav > ul > li > a:hover {
     display: block;
   }
   
-  .dropDown-content a:hover {background-color: rgb(221, 221, 221)}
+  .dropDown-content a:hover {
+    background-color: rgb(221, 221, 221);
+  }
   
   .dropDown:hover .dropDown-content {
     display: block;
@@ -67,12 +77,13 @@ nav > ul > li > a:hover {
   
   .dropDown:hover .dropButton:hover {
     background-color: rgb(221, 221, 221);
+    border-radius: 5px;
   }
 
   /* MAIN CONTENT*/
   .mainBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 10px;
     flex-wrap: wrap;
     align-items: center;
@@ -80,12 +91,11 @@ nav > ul > li > a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     padding-right: .5rem;
   }
-  .mainBox h2, p{
+  .mainBox h2, .mainBox p{
     margin: 1rem;
-  }
-  .mainBox h2, p {
     text-align: center;
   }
+
   .mainBox > img {
     border-radius: 20px;
     margin: 5px;
@@ -93,9 +103,58 @@ nav > ul > li > a:hover {
 
   .mainBox > div{
     flex-grow: 2;
-    padding-left: .5rem;
   }
 
+  /*EXPERIENCE BOX*/
+  .experienceBox {
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    padding-right: .5rem;
+    background-color: white;
+  }
+  .experienceBox h3, .experienceBox p {
+    margin: 0.7rem;
+  }
+  .experienceBox h3, .linkBox h3 {
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+  .experienceBox p {
+    padding-bottom: 0.5rem;
+  }
+
+  .presentationBox {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    padding: 1px 15px;
+  }
+
+  .linkBox {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    margin: 0;
+  }
+
+  .linkBox > ul {
+    list-style-type: none;
+    margin: 5px;
+    padding-bottom: 10px; 
+  }
+  .linkBox > ul > li {
+    margin-bottom: 7px;
+  }
+  .linkBox > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  .linkBox > ul > li > a:hover {
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+  }
+  
+
+  /*MEDIA SCREEN*/
   @media screen and (max-width: 730px) {
     .mainBox {
       flex-direction: column;
