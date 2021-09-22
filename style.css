@@ -68,3 +68,40 @@ nav > ul > li > a:hover {
   .dropDown:hover .dropButton:hover {
     background-color: rgb(221, 221, 221);
   }
+
+  /* MAIN CONTENT*/
+  .mainBox {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    padding-right: .5rem;
+  }
+  .mainBox h2, p{
+    margin: 1rem;
+  }
+  .mainBox h2 {
+    text-align: flex-start;
+  }
+  .mainBox > img {
+    border-radius: 20px;
+    margin: 5px;
+  }
+
+  .mainBox > div{
+    flex-grow: 2;
+    padding-left: .5rem;
+  }
+
+  @media screen and (max-width: 730px) {
+    .mainBox {
+      flex-direction: column;
+    }
+    .mainBox h2, .mainBox p {
+      text-align: center;
+    }
+
+  }
