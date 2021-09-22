@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6bbff5247a.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+    <script src="login.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Johannes Jakobsson</title>
+    <link rel="stylesheet" href="login/login.css">
+    <title>Logga in</title>
 </head>
 <body>
     <header class="mainHeader">
@@ -32,13 +34,16 @@
     </header>
 
     <main class="mainContent">
-        <div class="startBox mainBox">
-            <img src="assets/johannesRauk.jpg" width="200px" alt="Bild på Johannes">
-            <div>
-                <h2>Välkommen till min sida!</h2>
-                <h2>Mitt namn är Johannes Jakobsson</h2>
-                <p>Navigera på sidan via menyn uppe till vänster</p>           
+        <div class="signIn"> 
+            <div id="logIn">
+                <h3>Logga in</h3>
+                <input id="username" type="text" placeholder="Användarnamn"><br>
+                <input id="password" type="password" placeholder="Lösenord"><br>
+                <button id="logInBtn" type="button">Logga in</button>
             </div>
+        </div>
+        <div class="signIn" style="margin-top: 10px;">
+            <p>Denna funktion kommer snart!</p>
         </div>
     </main>
     

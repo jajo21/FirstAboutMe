@@ -15,7 +15,7 @@ body {
     background-color: white;
     box-shadow: 0 2px 4px #888888;
 }
-nav > ul {
+.mainHeader > nav > ul {
     list-style-type: none;
     display:flex;
     justify-content: flex-end;
@@ -23,16 +23,16 @@ nav > ul {
     margin: 10px;
     padding: 5px;
 }
-nav > ul > li {
+.mainHeader > nav > ul > li {
     margin: 0.3rem;
 }
-nav>ul>li:nth-child(1) {
+.mainHeader > nav>ul>li:nth-child(1) {
     flex-grow: 2;
 }
-nav > ul > li > a {
+.mainHeader > nav > ul > li > a {
     color: black;
 }
-nav > ul > li > a:hover {
+.mainHeader > nav > ul > li > a:hover {
     background-color: rgb(221, 221, 221);
     border-radius: 5px;
 }
