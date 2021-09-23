@@ -5,12 +5,13 @@
 html, body {
   max-width: 1000px;
   max-height: 700px;
-  margin: 0 auto;
+  margin:0 auto;
+  padding: 0 4px 4px 4px;
 }
 body {
   background-color: rgb(247, 252, 255);
 }
-/* MAIN HEADER*/
+/* MAIN HEADER */
 .mainHeader {
     background-color: white;
     box-shadow: 0 2px 4px #888888;
@@ -36,7 +37,7 @@ body {
     background-color: rgb(221, 221, 221);
     border-radius: 5px;
 }
-
+/*-------------------------------------------*/
 /*DROPDOWN BUTTON*/
 .dropButton {
     font-size: 30px;
@@ -79,7 +80,7 @@ body {
     background-color: rgb(221, 221, 221);
     border-radius: 5px;
   }
-
+  /*---------------------------------------*/
   /* MAIN CONTENT*/
   .mainBox {
     display: flex;
@@ -105,7 +106,7 @@ body {
     flex-grow: 2;
   }
 
-  /*EXPERIENCE BOX*/
+  /*EXPERIENCE BOX + NÅGRA LINKBOX*/
   .experienceBox {
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
@@ -119,16 +120,23 @@ body {
     padding-top: 0.5rem;
     text-align: center;
   }
-  .experienceBox p {
-    padding-bottom: 0.5rem;
+  .experienceBox h3:hover {
+    cursor: pointer;
+    background-color: rgb(221, 221, 221);
   }
 
+  .experienceBox p, .experienceBox h3 {
+    padding-bottom: 0.5rem;
+  }
+/* --------------------------------------*/
+/* PRESENTATIONBOX */
   .presentationBox {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     padding: 1px 15px;
   }
-
+/*---------------------------------------*/
+/* LINKBOX */
   .linkBox {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
@@ -152,7 +160,11 @@ body {
     background-color: rgb(221, 221, 221);
     border-radius: 5px;
   }
-  
+/*----------------------------------------*/
+
+  .hideText {
+    display: none;
+  }
 
   /*MEDIA SCREEN*/
   @media screen and (max-width: 730px) {
