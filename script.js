@@ -7,13 +7,13 @@ const eduText = document.querySelector(".eduText");
 const other = document.querySelector(".other");
 const otherText = document.querySelector(".otherText");
 
-function hide(a,b) {
-a.addEventListener("click", function() { // genom ett click ändras bordern på headern
-    b.classList.toggle("hideText");      // toggle istället för tex add är "av/på", (lägg till ta bort class)
+function onOff(a,b) {
+a.addEventListener("click", function() { 
+    b.classList.toggle("hideText");     
 });
 }
 
-hide(emp, textEmp);
-hide(shortEmp, textShortEmp);
-hide(education, eduText);
-hide(other, otherText);
+onOff(emp, textEmp);
+onOff(shortEmp, textShortEmp);
+onOff(education, eduText);
+onOff(other, otherText);
