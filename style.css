@@ -100,6 +100,7 @@ body {
   .mainBox > img {
     border-radius: 20px;
     margin: 5px;
+    width: 200px;
   }
 
   .mainBox > div{
@@ -107,13 +108,12 @@ body {
   }
 
   /*EXPERIENCE BOX + NÅGRA LINKBOX*/
-  .experienceBox {
+  .experienceBox, .linkBox {
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-    padding-right: .5rem;
     background-color: white;
   }
-  .experienceBox h3, .experienceBox p {
+  .experienceBox h3, .experienceBox p, .linkBox h3 {
     margin: 0.7rem;
   }
   .experienceBox h3, .linkBox h3 {
@@ -137,12 +137,6 @@ body {
   }
 /*---------------------------------------*/
 /* LINKBOX */
-  .linkBox {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-    margin: 0;
-  }
-
   .linkBox > ul {
     list-style-type: none;
     margin: 5px;
@@ -164,6 +158,14 @@ body {
 
   .hideText {
     display: none;
+  }
+
+  .noSelect {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
   }
 
   /*MEDIA SCREEN*/
