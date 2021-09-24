@@ -158,7 +158,9 @@ body {
 .hideText {
     display: none;
 }
-.noSelect {
+/*Gör så att det ej går att "välja/selecta" text på sidan, det såg fult ut när 
+man klickade på funktionerna i arbetslivserfarenheter utan den här klassen */
+.noSelect { 
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
