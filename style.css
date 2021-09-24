@@ -92,7 +92,7 @@ body {
 }
 .mainBox > img {
     border-radius: 20px;
-    margin: 5px;
+    margin: 10px;
     width: 200px;
 }
 .mainBox > div{
@@ -140,7 +140,7 @@ body {
 .linkBox > ul {
     list-style-type: none;
     margin: 5px;
-    padding-bottom: 10px; 
+    padding: 15px; 
 }
 .linkBox > ul > li {
     margin-bottom: 7px;
@@ -168,7 +168,7 @@ man klickade på funktionerna i arbetslivserfarenheter utan den här klassen */
     -webkit-touch-callout: none;
 }
   /*MEDIA SCREEN*/
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 755px) {
     .mainBox {
       flex-direction: column;
     }
