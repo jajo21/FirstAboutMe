@@ -1,5 +1,5 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 html, body {
@@ -44,14 +44,12 @@ body {
     border: none;
     cursor: pointer;
     background-color: white;
-  }
-  
-  .dropDown {
+} 
+.dropDown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropDown-content {
+}
+.dropDown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -59,30 +57,26 @@ body {
     box-shadow: 0 2px 4px #888888;
     z-index: 1;
     font-size: 20px;
-  }
-  
-  .dropDown-content a {
+}
+.dropDown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropDown-content a:hover {
+}
+.dropDown-content a:hover {
     background-color: rgb(221, 221, 221);
-  }
-  
-  .dropDown:hover .dropDown-content {
+}
+.dropDown:hover .dropDown-content {
     display: block;
-  }
-  
-  .dropDown:hover .dropButton:hover {
+}
+.dropDown:hover .dropButton:hover {
     background-color: rgb(221, 221, 221);
     border-radius: 5px;
-  }
-  /*---------------------------------------*/
-  /* MAIN CONTENT*/
-  .mainBox {
+}
+/*---------------------------------------*/
+/* MAIN CONTENT*/
+.mainBox {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
@@ -91,90 +85,92 @@ body {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     padding-right: .5rem;
-  }
-  .mainBox h2, .mainBox p{
+}
+.mainBox h2, .mainBox p{
     margin: 1rem;
     text-align: center;
-  }
-
-  .mainBox > img {
+}
+.mainBox > img {
     border-radius: 20px;
     margin: 5px;
     width: 200px;
-  }
-
-  .mainBox > div{
+}
+.mainBox > div{
     flex-grow: 2;
-  }
-
-  /*EXPERIENCE BOX + NÅGRA LINKBOX*/
-  .experienceBox, .linkBox {
+}
+/*EXPERIENCE BOX + NÅGRA LINKBOX*/
+.experienceBox, .linkBox {
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-    background-color: white;
-  }
-  .experienceBox h3, .experienceBox p, .linkBox h3 {
+    background-color: white;    
+}
+.experienceBox h3, .linkBox h3 {
     margin: 0.7rem;
-  }
-  .experienceBox h3, .linkBox h3 {
+}
+.experienceBox h3, .linkBox h3 {
     padding-top: 0.5rem;
     text-align: center;
-  }
-  .experienceBox h3:hover {
+}
+.experienceBox h3:hover {
     cursor: pointer;
     background-color: rgb(221, 221, 221);
-  }
-
-  .experienceBox p, .experienceBox h3 {
+}
+.experienceBox h3:active {
+    background-color: white;
+}
+.experienceBox p, .experienceBox h3 {
     padding-bottom: 0.5rem;
-  }
+}
+.textEmp > ul, .textShortEmp > ul, .eduText > ul, .otherText > ul{
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+ }
+.textEmp, .textShortEmp, .eduText, .otherText {
+    padding-bottom: 1px;
+}
 /* --------------------------------------*/
 /* PRESENTATIONBOX */
-  .presentationBox {
+.presentationBox {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     padding: 1px 15px;
-  }
+}
 /*---------------------------------------*/
 /* LINKBOX */
-  .linkBox > ul {
+.linkBox > ul {
     list-style-type: none;
     margin: 5px;
     padding-bottom: 10px; 
-  }
-  .linkBox > ul > li {
+}
+.linkBox > ul > li {
     margin-bottom: 7px;
-  }
-  .linkBox > ul > li > a {
+}
+.linkBox > ul > li > a {
     color: black;
     text-decoration: none;
     font-size: 30px;
-  }
-  .linkBox > ul > li > a:hover {
+}
+.linkBox > ul > li > a:hover {
     background-color: rgb(221, 221, 221);
     border-radius: 5px;
-  }
+}
 /*----------------------------------------*/
-
-  .hideText {
+.hideText {
     display: none;
-  }
-
-  .noSelect {
+}
+.noSelect {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-touch-callout: none;
-  }
-
+}
   /*MEDIA SCREEN*/
-  @media screen and (max-width: 730px) {
+@media screen and (max-width: 730px) {
     .mainBox {
       flex-direction: column;
     }
     .mainBox h2, .mainBox p {
       text-align: center;
     }
-
-  }
+}
