@@ -118,7 +118,7 @@ body {
 .experienceBox h3:active {
     background-color: white;
 }
-.experienceBox p, .experienceBox h3 {
+.experienceBox h3 {
     padding-bottom: 0.5rem;
 }
 .textEmp > ul, .textShortEmp > ul, .eduText > ul, .otherText > ul{
