@@ -154,6 +154,10 @@ body {
     background-color: rgb(221, 221, 221);
     border-radius: 5px;
 }
+.githubRepos > li {
+    border: 1px solid black;
+    padding: 5px;
+}
 /*----------------------------------------*/
 .hideText {
     display: none;
