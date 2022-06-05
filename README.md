@@ -1,4 +1,4 @@
-# Bygg ett CV och en portfolio för webben
+# Bygg ett CV och en portfolio för webben - September 2021
 ## Instruktioner
 1. Ladda ner repot från https://github.com/jajo21/jajo21.github.io
 2. Leta upp valfri terminal och utgå från nerladdad mapp.
